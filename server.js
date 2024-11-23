@@ -1,32 +1,7 @@
 import express from 'express';
+import conectarAoBanco from './src/config/db-config.js';
 
-const posts = [
-    {
-        id: 1,
-        descricao: "Gato curioso observando a janela",
-        imagem: "https://placecats.com/millie/300/150"
-    },
-    {
-        id: 2,
-        descricao: "Gatinho dormindo em uma caixa de papelão",
-        imagem: "https://placecats.com/millie/300/150"
-    },
-    {
-        id: 3,
-        descricao: "Gato brincando com um novelo de lã",
-        imagem: "https://placecats.com/millie/300/150"
-    },
-    {
-        id: 4,
-        descricao: "Gato preto fazendo pose para a foto",
-        imagem: "https://placecats.com/millie/300/150"
-    },
-    {
-        id: 5,
-        descricao: "Dois gatos brincando",
-        imagem: "https://placecats.com/millie/300/150"
-    }
-];
+const conexao = await conectarAoBanco(process.env.STRING_CONEXAO);
 
 const app = express();
 app.use(express.json())
