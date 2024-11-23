@@ -1,26 +1,9 @@
 import express from 'express';
-import conectarAoBanco from './src/config/db-config.js';
-
-const conexao = await conectarAoBanco(process.env.STRING_CONEXAO);
+import routes from "./src/routes/posts-routes.js";
 
 const app = express();
-app.use(express.json())
+routes(app)
 
 app.listen(3000, () => {
     console.log("Servidor escutando...");
-});
-
-app.get("/posts", (req, res) => {
-    res.status(200).json(posts);
-});
-
-function buscarPostPorID(id) {
-    return posts.findIndex((post) => {
-        return post.id === Number(id);
-    });
-};
-
-app.get("/posts/:id", (req, res) => {
-    const index = buscarPostPorID(req.params.id);
-    res.status(200).json(posts[index]);
 });
