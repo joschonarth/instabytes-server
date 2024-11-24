@@ -52,22 +52,12 @@ Bem-vindo ao **InstaBytes**, uma API desenvolvida em Node.js que simula uma apli
 - **Método**: `POST`
 - **Endpoint**: `/posts/upload`
 - **Header**: `Content-Type: multipart/form-data`
-- **Exemplo de requisição:**
-
-```json
-
-```
 
 ### ✏️ 4. Atualizar uma Imagem
 
-- **Descrição**: Atualiza a imagem de um post existente. O `id` deve ser substituído pelo identificador do post.  
+- **Descrição**: Atualiza a imagem de um post existente e utiliza o **Google Gemini** para gerar automaticamente uma descrição baseada no conteúdo da nova imagem.  O `id` deve ser substituído pelo identificador do post.  
 - **Método**: `PUT`
 - **Endpoint**: `/posts/upload/:id`
-- **Exemplo de requisição:**
-
-```json
-
-```
 
 ## ⚙️ Configuração do Projeto
 
