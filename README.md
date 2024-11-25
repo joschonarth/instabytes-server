@@ -8,8 +8,8 @@ Bem-vindo ao **InstaBytes**, uma API desenvolvida em Node.js que simula uma apli
 
 - 📃 **Listar posts**: Exibe todos os posts cadastrados na aplicação.
 - ➕ **Criar post**: Permite criar novos posts com título e descrição.
-- 📤 **Upload de imagens**: Faz o upload de imagens para os posts e gera descrições automáticas utilizando inteligência artificial.
-- ✏️ **Atualização de imagens**: Substitui imagens existentes em posts específicos.
+- 📤 **Upload de imagens**: Permite fazer o upload de imagens associadas aos posts.
+- ✏️ **Atualizar post com IA**: Utiliza o **Google Gemini** para gerar descrições inteligentes e detalhadas das imagens postadas.
 - 🌐 **Conexão em nuvem**: Hospedagem e banco de dados totalmente integrados ao Google Cloud e MongoDB Atlas.
 
 ---
@@ -20,9 +20,8 @@ Bem-vindo ao **InstaBytes**, uma API desenvolvida em Node.js que simula uma apli
 - 🟢 **Node.js**: Plataforma de execução do JavaScript no servidor.
 - 🗄️ **MongoDB**: Banco de dados não relacional para armazenar informações dos posts.
 - ☁️ **MongoDB Atlas**: Serviço em nuvem para hospedagem do banco de dados MongoDB.
+- 🤖 **Google Gemini**: Ferramenta para geração automática de descrições das imagens postadas.
 - 🌐 **Google Cloud**: Plataforma de hospedagem da aplicação.
-- 🖼️ **Google Gemini**: Ferramenta para geração automática de descrições das imagens postadas.
-
 ---
 
 ## 🔗 Rotas Disponíveis
@@ -58,6 +57,8 @@ Bem-vindo ao **InstaBytes**, uma API desenvolvida em Node.js que simula uma apli
 - **Descrição**: Atualiza a imagem de um post existente e utiliza o **Google Gemini** para gerar automaticamente uma descrição baseada no conteúdo da nova imagem.  O `id` deve ser substituído pelo identificador do post.  
 - **Método**: `PUT`
 - **Endpoint**: `/posts/upload/:id`
+
+---
 
 ## ⚙️ Configuração do Projeto
 
@@ -136,10 +137,6 @@ npm run dev
 
 5. 🌐 Acesse a API em [http://localhost:3000](http://localhost:3000).
 
-## 🌍 Hospedagem
-
-🌐 A aplicação está hospedada no Google Cloud e pode ser acessada publicamente.
-
 ---
 
 ## 📚 Documentações e Links Importantes
@@ -150,7 +147,7 @@ Aqui estão alguns links úteis para ajudar no desenvolvimento e configuração 
   [Site Oficial](https://nodejs.org/) | [Documentação](https://nodejs.org/en/docs/)
 
 - 📦 **npm (Node Package Manager)**  
-  [Documentação](https://docs.npmjs.com/)
+  [Site Oficial](https://www.npmjs.com/) | [Documentação](https://docs.npmjs.com/)
 
 - 🗄️ **MongoDB**  
   [Site Oficial](https://www.mongodb.com/) | [Documentação](https://www.mongodb.com/docs/)
