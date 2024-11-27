@@ -139,6 +139,14 @@ npm run dev
 
 ---
 
+## 🌐 Frontend do Projeto
+
+O código do frontend para a aplicação **InstaBytes** pode ser encontrado em um repositório separado. Este repositório contém a interface que consome a API desenvolvida no backend, permitindo a interação com os posts e o upload de imagens.
+
+- **Repositório Frontend**: [InstaBytes Frontend - GitHub](https://github.com/joschonarth/instabytes-frontend)
+
+---
+
 ## 📚 Documentações e Links Importantes
 
 Aqui estão alguns links úteis para ajudar no desenvolvimento e configuração do projeto:
